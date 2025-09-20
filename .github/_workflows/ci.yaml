@@ -304,7 +304,7 @@ jobs:
       fail-fast: false
       matrix:
         k8s: [v1.30.13, v1.31.12, v1.32.8, v1.33.4, v1.34.0]
-    uses: ./.github/workflows/zz-tmpl-k8s-e2e.yaml
+    uses: ./.github/_workflows/zz-tmpl-k8s-e2e.yaml
     with:
       k8s-version: ${{ matrix.k8s }}
 
@@ -319,7 +319,7 @@ jobs:
       fail-fast: false
       matrix:
         k8s: [v1.30.13, v1.31.12, v1.32.8, v1.33.4, v1.34.0]
-    uses: ./.github/workflows/zz-tmpl-k8s-e2e.yaml
+    uses: ./.github/_workflows/zz-tmpl-k8s-e2e.yaml
     with:
       k8s-version: ${{ matrix.k8s }}
       variation: "CHROOT"

@@ -69,7 +69,7 @@ jobs:
     needs: changes
     if: |
       (needs.changes.outputs.cfssl == 'true')
-    uses: ./.github/workflows/zz-tmpl-images.yaml
+    uses: ./.github/_workflows/zz-tmpl-images.yaml
     with:
       name: cfssl
     secrets: inherit
@@ -78,7 +78,7 @@ jobs:
     needs: changes
     if: |
       (needs.changes.outputs.custom-error-pages == 'true')
-    uses: ./.github/workflows/zz-tmpl-images.yaml
+    uses: ./.github/_workflows/zz-tmpl-images.yaml
     with:
       name: custom-error-pages
     secrets: inherit
@@ -87,7 +87,7 @@ jobs:
     needs: changes
     if: |
       (needs.changes.outputs.e2e-test-echo == 'true')
-    uses: ./.github/workflows/zz-tmpl-images.yaml
+    uses: ./.github/_workflows/zz-tmpl-images.yaml
     with:
       name: e2e-test-echo
     secrets: inherit
@@ -96,7 +96,7 @@ jobs:
     needs: changes
     if: |
       (needs.changes.outputs.ext-auth-example-authsvc == 'true')
-    uses: ./.github/workflows/zz-tmpl-images.yaml
+    uses: ./.github/_workflows/zz-tmpl-images.yaml
     with:
       name: ext-auth-example-authsvc
     secrets: inherit
@@ -105,7 +105,7 @@ jobs:
     needs: changes
     if: |
       (needs.changes.outputs.fastcgi-helloserver == 'true')
-    uses: ./.github/workflows/zz-tmpl-images.yaml
+    uses: ./.github/_workflows/zz-tmpl-images.yaml
     with:
       name: fastcgi-helloserver
     secrets: inherit
@@ -114,7 +114,7 @@ jobs:
     needs: changes
     if: |
       (needs.changes.outputs.go-grpc-greeter-server == 'true')
-    uses: ./.github/workflows/zz-tmpl-images.yaml
+    uses: ./.github/_workflows/zz-tmpl-images.yaml
     with:
       name: go-grpc-greeter-server
     secrets: inherit
@@ -123,7 +123,7 @@ jobs:
     needs: changes
     if: |
       (needs.changes.outputs.httpbun == 'true')
-    uses: ./.github/workflows/zz-tmpl-images.yaml
+    uses: ./.github/_workflows/zz-tmpl-images.yaml
     with:
       name: httpbun
     secrets: inherit

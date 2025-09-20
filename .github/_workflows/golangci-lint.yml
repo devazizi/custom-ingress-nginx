@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - '**/*.go'
-      - '.github/workflows/golangci-lint.yml'
+      - '.github/_workflows/golangci-lint.yml'
 
 permissions:
   contents: read
